@@ -1,3 +1,46 @@
+# Google Maps Bike Directions
+
+A Next.js app that provides bicycle directions in San Francisco using the Google Maps API. Users can enter an address or intersection for both the starting point and destination, and receive the best bicycle route displayed on a map and as a list of directions.
+
+## Features
+- Input for start and destination (address or intersection)
+- Uses Google Maps Geocoding and Directions APIs
+- Displays the route on a map
+- Shows step-by-step directions
+
+## Setup
+
+1. **Clone the repository and install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Get a Google Maps API Key:**
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/)
+   - Enable the following APIs:
+     - Maps JavaScript API
+     - Geocoding API
+     - Directions API
+   - Create an API key and restrict it as needed
+
+3. **Set up environment variables:**
+   - Create a `.env.local` file in the project root:
+     ```env
+     NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_api_key_here
+     ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open [http://localhost:3000](http://localhost:3000) to view the app.**
+
+---
+
+## License
+MIT
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
